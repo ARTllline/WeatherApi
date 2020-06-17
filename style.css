@@ -1,0 +1,399 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(155, 154, 154);
+}
+h5{
+    margin:0;
+}
+h1{
+    margin:0;
+}
+h4{
+    margin: 10px;
+}
+p{
+    margin: 0;
+}
+hr{
+    width: 96%;
+    margin: 0px 10px;
+}
+.header
+{
+    position: absolute;
+    display: flex;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 60px;
+    background: rgb(39, 39, 39);
+    align-items: center;
+}
+.header > :nth-child(1){
+   margin-left: 20px;
+}
+.header > div{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60px;
+    user-select: none;
+}
+.header > div:hover{
+    background: rgb(51, 51, 51);
+}
+
+.header > input
+{
+    position: absolute;
+height: 20px;
+right: 20px;
+}
+
+#Today-div
+{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(19, 170, 175);
+}
+#Today-div > div
+{
+  background: rgb(255, 255, 255);
+  margin: 10px;
+}
+#Today-div > div h4
+{
+ margin-left: 10px;
+}
+#Today-div > :nth-child(1)
+{
+  height: 0px;
+}
+#Today-div > :nth-child(2)
+{
+  height: 0px;
+}
+#Today-div > :nth-child(3)
+{
+  height: 0px;
+}
+#Today-div-curW-header
+{
+    display: flex;
+    justify-content: space-between; 
+}
+#Today-div-curW-content
+{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: black;
+}
+#Today-div-curW-content > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90%;
+    width: 30%;
+}
+#Today-div-curW-content-1 > img
+{
+    width: 50px;
+    height: 50px;
+}
+
+
+#Today-div-hourly
+{
+    display: flex;
+    flex-direction: column;
+}
+#Today-div-hourly > div
+{
+    display: flex;
+    justify-content: space-around;
+    /* background: gray; */
+    margin: 5px 10px;
+}
+
+
+#Today-div-hourly-time
+{
+    height: 10%;
+}
+#Today-div-hourly-time > *
+{
+    width: 50px;
+}
+
+#Today-div-hourly-icon
+{
+    height: 15%;
+}
+#Today-div-hourly-icon > *
+{
+    width: 50px;
+}
+
+#Today-div-hourly-forecast
+{
+    height: 10%;
+}
+#Today-div-hourly-forecast> *
+{
+    width: 50px;
+}
+
+#Today-div-hourly-temp
+{
+    height: 10%;
+}
+#Today-div-hourly-temp > *
+{
+    width: 50px;
+}
+
+#Today-div-hourly-realFeel
+{
+    height: 10%;
+}
+#Today-div-hourly-realFeel > *
+{
+    width: 50px;
+}
+
+#Today-div-hourly-wind
+{
+    height: 10%;
+}
+#Today-div-hourly-wind> *
+{
+    width: 50px;
+}
+
+.hourlyTimeText
+{
+    color: black;
+    text-align: center;
+}
+.hourlyPic
+{
+    width: 50px;
+    height: 50px;
+}
+.nPTimeText
+{
+    color: black;
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 15px;
+    height: 70%;
+     margin: 10px;
+}
+
+.grid > div
+{
+    background: lightgray;
+    display: flex;
+    align-items: center;
+}
+
+.grid > div > :nth-child(1)
+{
+    width: 50%;
+}
+
+.grid > div > :nth-child(2)
+{
+    width: 50px;
+    height: 50px;
+}
+.grid > div > :nth-child(3)
+{
+    width: 20px;
+    margin-left: 4%;
+}
+
+
+ /* 5-Day-Section */
+
+#FDayDiv
+{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(19, 170, 175);
+}
+
+#FDayDiv > div
+{
+  background: rgb(255, 255, 255);
+  margin: 10px;
+}
+#FDayDiv > div h4
+{
+ margin-left: 10px;
+}
+#FDayDiv > :nth-child(1)
+{
+  height: 250px;
+  display: flex;
+}
+#FDayDiv > :nth-child(2)
+{
+  height: 0px;
+}
+#FDayDiv > :nth-child(2) > div
+{
+  height: 100%;
+  width: 100%;
+  display: flex;
+flex-direction: column;
+}
+
+#FDayDiv > :nth-child(2) > div 
+{
+  height: 100%;
+  width: 100%;
+  display: flex;
+flex-direction: column;
+}
+
+#FDayDiv > :nth-child(1) > div
+{
+    width: 20%;
+    background: white;
+    border: gray solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#FDayDiv > :nth-child(1) > div >:nth-child(2)
+{
+color: rgb(77, 77, 77);
+}
+#FDayDiv > :nth-child(1) > div >:nth-child(3)
+{
+    margin-left: 0;
+    align-self: center;
+width: 100px;
+height: 100px;
+}
+#FDayDiv > :nth-child(1) > div >:nth-child(4)
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  margin: 0;
+}
+#FDayDiv > :nth-child(1) > div >:nth-child(5)
+{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+  margin: 0;
+}
+
+
+#FDayDiv-hourly
+{
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+}
+#FDayDiv-hourly > div
+{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px 10px;
+}
+
+
+#FDayDiv-hourly-time
+{
+    height: 10%;
+}
+#FDayDiv-hourly-time > *
+{
+    width: 50px;
+}
+
+#FDayDiv-hourly-icon
+{
+    height: 15%;
+}
+#FDayDiv-hourly-icon > *
+{
+    width: 50px;
+}
+
+#FDayDiv-hourly-forecast
+{
+    height: 10%;
+}
+#FDayDiv-hourly-forecast> *
+{
+    width: 50px;
+}
+
+#FDayDiv-hourly-temp
+{
+    height: 10%;
+}
+#FDayDiv-hourly-temp > *
+{
+    width: 50px;
+}
+
+#FDayDiv-hourly-realFeel
+{
+    height: 10%;
+}
+#FDayDiv-hourly-realFeel > *
+{
+    width: 50px;
+}
+
+#FDayDiv-hourly-wind
+{
+    height: 10%;
+}
+
+#FDayDiv-hourly-wind> *
+{
+    width: 50px;
+}
+
+#Errordiv
+{
+    height: 500px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Errordiv > img
+{
+    height: 300px;
+    width: 500px;
+}
+
+#Errordiv > h2
+{
+    margin: 0;
+    margin-top: 5px;
+    color: rgb(76, 94, 110);
+}
